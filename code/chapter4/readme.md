@@ -125,7 +125,7 @@ To set the hello message, you will need to pay gas. The example below asks the u
 
 ## Use command line tools
 
-* The Truffle project
-* The dapp's web files
+* [The Truffle project](https://github.com/juntao/BuildingBlockchainApps/tree/master/code/chapter4/hello_world/truffle)
+* [The dapp's web files](https://github.com/juntao/BuildingBlockchainApps/tree/master/code/chapter4/hello_world/dapp)
 
 

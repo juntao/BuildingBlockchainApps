@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/web3.min.js"></script>
+    <script>
+      web3 = new Web3(new Web3.providers.HttpProvider(
+              "https://ropsten.infura.io/"));
+
+      var hello = web3.eth.contract([ { "constant": false, "inputs": [ { "name": "_new_msg", "type": "string" } ], "name": "updateMessage", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [], "name": "kill", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [ { "name": "", "type": "address" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "sayHello", "outputs": [ { "name": "", "type": "string" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" } ]).at("0x8bc27c8129eea739362d786ca0754b5062857e9c");
+
+      var mesg = hello.sayHello();
+    </script>
+  </head>
+
+  <body>
+    <h2>The HelloWorld Contract says</h2>
+    <p>
+      <script>
+        if (mesg === undefined || mesg == null) {
+        } else {
+          document.write(mesg)
+        }
+      </script>
+    </p>
+  </body>
+</html>

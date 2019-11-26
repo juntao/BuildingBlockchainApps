@@ -1,4 +1,4 @@
-## Prerequisite
+## Tools
 
 The developer tool to use in this chapter is the [BUIDL IDE](https://www.secondstate.io/buidl/). Just click on the link below from any browser!
 

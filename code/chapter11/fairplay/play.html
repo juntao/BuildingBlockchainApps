@@ -1,0 +1,6 @@
+<script>
+	arr = window.location.href.split("/")
+	arr.splice(-1, 0, "v1");
+	forwardPlayUrl = arr.join("/")
+	window.location.href = forwardPlayUrl
+</script>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/webet.css">
+    <link rel="stylesheet" href="css/iutoast.css">
+    <title>WeBet</title>
+</head>
+<body class="main-bg">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<div class="main-contain start-content">
+    <div class="main-middle">
+        <div id="main-div-count">
+            <div class="main-div">
+                <input name="choice" id="title" onkeyup="checkChoice()" maxlength="140"
+                       placeholder="The issue to bet on"
+                       value="">
+                <div class="main-line"></div>
+            </div>
+            <div class="main-div">
+                <input id="betMinAmount" onkeyup="startOnlyNumber(this.value)" maxlength="10"
+                       placeholder="The Bet Minimum to bet "
+                       value="">
+                <div class="main-line"></div>
+            </div>
+            <div class="main-div">
+                <div class="start-checkbox">
+                    <input type="checkbox" value="markCheckbox" id="markCheckbox">
+                    <label class="mark start-checkbox"  id="allowUserBet">&nbsp;&nbsp;Allow User Bet
+                        Amount</label>
+                </div>
+                <div class="main-line"></div>
+            </div>
+            <div class="main-div">
+                <input name="choice" onkeyup="checkChoice(this.value)" maxlength="20" placeholder="Option A" value="">
+                <div class="main-line"></div>
+            </div>
+
+            <div class="main-div">
+                <input name="choice" onkeyup="checkChoice(this.value)" maxlength="20" placeholder="Option B" value="">
+                <div class="main-line"></div>
+            </div>
+            <div class="main-div">
+                <input name="choice" onkeyup="checkChoice(this.value)" maxlength="20" placeholder="Option C" value="">
+                <div class="main-line"></div>
+            </div>
+            <div class="add-div"></div>
+        </div>
+        <div>
+            <div class="main-div-option" id="delDiv">
+                <img class="main-button-option" src="./images/del.png">
+                <p class="main-button-front" id="delOption">Del option</p>
+                <div class="main-line main-hidden"></div>
+            </div>
+            <p class="main-line-button"></p>
+            <div class="main-div-option" id="addDiv">
+                <img class="main-button-option" src="./images/add.png">
+                <p class="main-button-front" id="addOption">Add option</p>
+                <div class="main-line main-hidden"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-contain main-div-button start-content">
+    <div class="main-button-div" id="submit-div">
+        <div class="main-button">
+            <p id="submit" class="main-button-not-click-font">New Bet Contract</p>
+        </div>
+    </div>
+</div>
+<div class="share-desc-div share-bottom-div start-content">
+    <div class="share-font">
+        <a href="##" onclick="backIndex()" id="backIndex">Back Index</a>
+    </div>
+</div>
+<input type="hidden" value="true" id="shouldCheckTheResult">
+<input type="hidden" id="userAddress">
+<input type="hidden" id="allowUserBetCheckbox" value="1">
+<script src="./js/main.js"></script>
+<script src="./js/start.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+    <!-- Startups -->
+
+    <servlet>
+        <servlet-name>StartupServlet</servlet-name>
+        <servlet-class>com.ringful.blockchain.facts.servlets.StartupServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+ 
+    <!-- Servlets -->
+
+
+    <!-- Filters -->
+
+    <filter>
+        <filter-name>IndexFilter</filter-name>
+        <filter-class>com.ringful.blockchain.facts.servlets.IndexFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>IndexFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <mime-mapping>
+        <extension>jsp</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+
+    <session-config>
+        <session-timeout>1440</session-timeout>
+    </session-config>
+
+</web-app>

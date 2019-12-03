@@ -10,9 +10,7 @@ Alternatively, you will need the following tools to develop for Ethereum.
 
 * [Metamask](https://metamask.io/)
 * [Remix](https://remix.ethereum.org/)
-* [Truffle Suite](https://www.trufflesuite.com/)
 * [Web3.js](https://github.com/ethereum/web3.js/)
-* [Solidity compiler](https://solidity.readthedocs.io/en/v0.5.3/installing-solidity.html)
 
 ## The smart contract code
 
@@ -122,10 +120,4 @@ To set the hello message, you will need to pay gas. The example below asks the u
   </body>
 </html>
 ```
-
-## Use command line tools
-
-* [The Truffle project](https://github.com/juntao/BuildingBlockchainApps/tree/master/code/chapter4/hello_world/truffle)
-* [The dapp's web files](https://github.com/juntao/BuildingBlockchainApps/tree/master/code/chapter4/hello_world/dapp)
-
 

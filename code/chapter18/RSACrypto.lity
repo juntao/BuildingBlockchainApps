@@ -1,0 +1,15 @@
+pragma lity ^1.2.4;
+
+contract RSACrypto {
+    function encrypt(string pubkey, string plaintext) public pure returns (string) {
+        string memory ret;
+        ret = eni("rsa_encrypt", pubkey, plaintext);
+        return ret;
+    }
+
+    function decrypt(string prikey, string ciphertext) public pure returns (string) {
+        string memory ret;
+        ret = eni("rsa_decrypt", prikey, ciphertext);
+        return ret;
+    }
+}

@@ -1,0 +1,15 @@
+pragma lity ^1.2.4;
+contract StringReverse {
+
+      function test() public returns (string) {
+              string memory ret;
+              ret = eni("reverse", "Hello, world");
+              return ret;
+      }
+
+      function reverse(string src) public returns (string) {
+              string memory ret;
+              ret = eni("reverse", src);
+              return ret;
+      }
+}

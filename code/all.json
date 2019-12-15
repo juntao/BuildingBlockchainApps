@@ -1,0 +1,30 @@
+{
+  "chapter03": {
+    "title": "Chapter 03",
+    "intro": "Your First Blockchain App",
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "files": {
+      "lity": "demo.sol",
+      "html": "demo.html",
+      "css": "demo.css",
+      "js": "demo.js"
+    }
+  },
+  "chapter04": {
+    "title": "Chapter 04",
+    "intro": "Ethereum: Getting Started",
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "files": {
+      "lity": "demo.sol",
+      "html": "demo.html",
+      "css": "",
+      "js": "demo.js"
+    }
+  },
+}

@@ -35,10 +35,10 @@
       "js": []
     },
     "files": {
-      "lity": "demo.sol",
-      "html": "demo.html",
+      "lity": "account_balance/demo.sol",
+      "html": "account_balance/demo.html",
       "css": "",
-      "js": "demo.js"
+      "js": "account_balance/demo.js"
     }
   },
   "chapter17": {

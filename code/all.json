@@ -26,5 +26,47 @@
       "css": "",
       "js": "demo.js"
     }
+  },
+  "chapter11": {
+    "title": "Chapter 11",
+    "intro": "Smart Contract Search Engine. The account demo showcases the search engine to monitor contracts states.",
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "files": {
+      "lity": "demo.sol",
+      "html": "demo.html",
+      "css": "",
+      "js": "demo.js"
+    }
+  },
+  "chapter17": {
+    "title": "Chapter 11",
+    "intro": "Business Rules and Contracts: Lity Rules Engine",
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "files": {
+      "lity": "demo.lity",
+      "html": "demo.html",
+      "css": "",
+      "js": "demo.js"
+    }
+  },
+  "chapter18": {
+    "title": "Chapter 18",
+    "intro": "Building an Application-Specific EVM: Native functions",
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "files": {
+      "lity": "StringReverse.lity",
+      "html": "",
+      "css": "",
+      "js": ""
+    }
   }
 }
